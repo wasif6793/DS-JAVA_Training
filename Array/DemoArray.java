@@ -3,6 +3,8 @@ public class DemoArray {
 
       String[] name = new String[]{"Wasif", "Amjad", "Jaish", " Harsh", "Rohit"};
 
+      name[3] = "Mayank";
+
         for (int i = 0; i < name.length; i++) {
 
             System.out.print(name[i] + ", ");
