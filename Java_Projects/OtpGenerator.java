@@ -5,9 +5,7 @@ public class OtpGenerator {
 
     public static void main(String[] args) {
 
-        String otp = getotp();
-
-        System.out.println("Your Generated otp is " +otp);
+        System.out.println("Your Generated otp is " +getotp());
 
     }
     // Creating method to get opt

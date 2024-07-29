@@ -24,16 +24,16 @@ public class CurrencyConverterCalculator {
                     double usdAmount = sc.nextDouble();
                     double inrAmount =getUsdtoinr(usdAmount);
                     System.out.println("USD to INR Amount is " + inrAmount);
-                    System.out.println("**************************************");
+                    System.out.println("**********************************************");
                     System.out.println();
                     break;
 
                 case 2:
                     System.out.print("Enter INR value: ");
                     double inr = sc.nextDouble();
-                    double usd =getUsdtoinr(inr);
+                    double usd = getInrtousd(inr);
                     System.out.println("USD to INR Amount is " + usd);
-                    System.out.println("*************************************");
+                    System.out.println("**********************************************");
                     System.out.println();
                     break;
 
@@ -45,6 +45,7 @@ public class CurrencyConverterCalculator {
 
                 default:
                     System.out.println("You typed Invalid Number...");
+                    System.out.println("**********************************************");
                     System.out.println();
             }
         }
@@ -54,10 +55,7 @@ public class CurrencyConverterCalculator {
 
     }
 
-    public static double getInrtousd(double inr) {
-
-        return inrtousd * inr;
-    }
+    public static double getInrtousd(double inr) {return inrtousd * inr; }
 
     public static double getUsdtoinr(double usdAmount) {
         return usdtoinr * usdAmount;
