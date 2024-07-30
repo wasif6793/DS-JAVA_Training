@@ -57,8 +57,6 @@ public class GUISimpleCalculator {
 
         value.setBounds(10,10,206,93);
 
-
-
         frame.add(one);
         frame.add(two);
         frame.add(three);
@@ -102,9 +100,9 @@ public class GUISimpleCalculator {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
 
-                double num1 = Double.parseDouble(value.getText());
+                num1 = Double.parseDouble(value.getText());
 
-                String operator = "+";
+                operator = "+";
                 value.setText("");
             }
         });

@@ -1,6 +1,5 @@
 package Java_Projects;
 
-import java.awt.geom.RectangularShape;
 import java.util.Scanner;
 
 public class SimpleCalculator {
@@ -25,7 +24,7 @@ public class SimpleCalculator {
 
         String operator = sc.next();
 
-            double result = 0;
+            double result;
 
             switch (operator){
                 case "*":
