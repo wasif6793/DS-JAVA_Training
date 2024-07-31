@@ -1,5 +1,6 @@
 package Advanced_Java_Projects;
 
+import javax.security.auth.callback.TextInputCallback;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -77,5 +78,7 @@ public class GUIJavaProgramsSwing {
 
         //To visible a frame on screen
         frame.setVisible(true);
+
+        frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
     }
 }

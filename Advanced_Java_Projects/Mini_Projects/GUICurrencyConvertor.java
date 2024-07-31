@@ -87,5 +87,7 @@ public class GUICurrencyConvertor {
 
         //To visible a frame on screen
         frame.setVisible(true);
+
+        frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
     }
 }

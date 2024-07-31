@@ -56,6 +56,7 @@ public class GUIOtpGenerator {
         frame.setLayout(null);
         frame.setSize(340,280);
         frame.setVisible(true);
+        frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
     }
 
 }

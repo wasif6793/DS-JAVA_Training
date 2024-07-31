@@ -183,6 +183,7 @@ public class GUISimpleCalculator {
         frame.setLayout(null);
         frame.setVisible(true);
         frame.setSize(240,350);
+        frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
 
 
