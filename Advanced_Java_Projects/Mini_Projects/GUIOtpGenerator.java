@@ -12,7 +12,7 @@ public class GUIOtpGenerator {
 
     static void otpgen(){
 
-        JFrame frame = new JFrame();
+        JFrame frame = new JFrame("Otp Generator");
 
         JLabel otplabel = new JLabel();
 
@@ -59,3 +59,6 @@ public class GUIOtpGenerator {
     }
 
 }
+
+
+

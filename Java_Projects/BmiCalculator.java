@@ -16,8 +16,8 @@ public class BmiCalculator {
 
             double bmi = weight / (heightinmeters * heightinmeters);
 
-            System.out.print("Your BMI is " + bmi );
-            System.out.println();
+            System.out.print("Your BMI is " + bmi +"\n");
+            //System.out.println();
             System.out.println("***************************************");
             System.out.println();
         }
