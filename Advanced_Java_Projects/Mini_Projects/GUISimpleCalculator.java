@@ -104,6 +104,7 @@ public class GUISimpleCalculator {
 
                 operator = "+";
                 value.setText("");
+                // value.setText(String.valueOf((num1)));
             }
         });
 
@@ -131,8 +132,11 @@ public class GUISimpleCalculator {
             public void actionPerformed(ActionEvent actionEvent) {
                 num1 = Double.parseDouble(value.getText());
 
+
                 operator = "/";
-                value.setText("");
+                value.setText(String.valueOf(num1) + "");
+                //value.setText(num1);
+
             }
         });
         clear.addActionListener(new ActionListener() {
@@ -141,7 +145,7 @@ public class GUISimpleCalculator {
                 num1 = 0;
                 num2 = 0;
                 operator = "";
-                value.setText("");
+                value.setText(num1 + "");
             }
         });
         equals.addActionListener(new ActionListener() {
