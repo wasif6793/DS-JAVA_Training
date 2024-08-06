@@ -17,15 +17,16 @@ public class GUIExpenseTracker {
 
         JFrame frame = new JFrame("Expense Tracker");
 
-        frame.setLayout(null);
-        frame.setVisible(true);
-        frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        frame.setSize(400,300);
+
 
         addButton.addActionListener(new AddbuttonListener());
         viewButton.addActionListener((new ViewButtonListener()));
 
         jdbcexpense(frame);
+        frame.setLayout(null);
+        frame.setVisible(true);
+        frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        frame.setSize(400,300);
     }
     private static void jdbcexpense(JFrame frame) {
 
@@ -59,8 +60,8 @@ public class GUIExpenseTracker {
         }
 
         private static void viewExpenses() throws SQLException{
-            String url = "JDBC:mysql://localhost:3306/expensedb";
-            Connection con = DriverManager.getConnection(url,"root","");
+            String url = "JDBC:mysql://localhost:43306/expensedb";
+            Connection con = DriverManager.getConnection(url,"root","Sheikh@7348");
             String query = "SELECT * FROM expensetb";
 
             try {
@@ -107,9 +108,9 @@ public class GUIExpenseTracker {
             }
         }
         private static void addexpense() throws SQLException{
-            String url = "JDBC:mysql://localhost:3306/expensedb";
+            String url = "JDBC:mysql://localhost:43306/expensedb";
             String espensetype = expensefield.getText();
-            Connection con = DriverManager.getConnection(url,"root","");
+            Connection con = DriverManager.getConnection(url,"root","Sheikh@7348");
             int expenseamount = Integer.parseInt(amountfield.getText());
             String query = "INSERT INTO expensetb(espensetype, expenseamount)VALUES('" + espensetype + "'," + expenseamount +")";
             try {
@@ -131,4 +132,5 @@ public class GUIExpenseTracker {
             }
         }
     }
+
 }
