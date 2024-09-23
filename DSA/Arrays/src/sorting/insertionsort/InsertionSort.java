@@ -1,4 +1,4 @@
-package DSA.Arrays.src.sorting;
+package DSA.Arrays.src.sorting.insertionsort;
 
 public class InsertionSort {
     public static void main(String[] args) {

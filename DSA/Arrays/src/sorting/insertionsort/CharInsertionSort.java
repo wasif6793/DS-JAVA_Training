@@ -1,4 +1,4 @@
-package DSA.Arrays.src.sorting;
+package DSA.Arrays.src.sorting.insertionsort;
 
 /*
 Sort an Array of Characters

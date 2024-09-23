@@ -1,8 +1,9 @@
-package basics;
+package DSA.Arrays.src.basics;
 
 import java.util.ArrayList;
 import java.util.List;
 
+//Creating Dynamic Array
 public class DynamicArray {
     public static void main(String[] args) {
         List<String> list = new ArrayList<String>(); // Defining the value

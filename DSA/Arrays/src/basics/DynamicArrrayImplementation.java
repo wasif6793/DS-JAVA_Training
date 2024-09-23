@@ -1,4 +1,4 @@
-package basics;
+package DSA.Arrays.src.basics;
 
 public class DynamicArrrayImplementation {
 

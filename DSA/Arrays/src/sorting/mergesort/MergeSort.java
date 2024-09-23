@@ -1,4 +1,4 @@
-package DSA.Arrays.src.sorting;
+package DSA.Arrays.src.sorting.mergesort;
 
 public class MergeSort {
     public static void main(String[] args) {
