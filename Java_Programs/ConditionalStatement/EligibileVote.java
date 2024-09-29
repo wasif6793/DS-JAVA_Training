@@ -1,3 +1,5 @@
+package Java_Programs.ConditionalStatement;
+
 import java.util.Scanner;
 
 public class EligibileVote {
